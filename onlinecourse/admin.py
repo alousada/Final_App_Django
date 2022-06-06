@@ -5,8 +5,8 @@ from .models import Course, Lesson, Instructor, Learner, Question, Choice #inser
 # <HINT> Register QuestionInline and ChoiceInline classes here
 
 
-class LessonInline(admin.StackedInline):
-    model = Lesson
+class QuestionInline(admin.StackedInline):
+    model = Question
     extra = 5
 
 #ChoiceInline and LessonInline classes added
